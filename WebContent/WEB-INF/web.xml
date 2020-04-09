@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ContactList</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+
+<servlet>
+   <servlet-name>Contacts</servlet-name>
+   <servlet-class>axs190172.Contacts</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>Contacts</servlet-name>
+   <url-pattern>/contacts</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>Insert</servlet-name>
+   <servlet-class>axs190172.InsertContact</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>Insert</servlet-name>
+   <url-pattern>/insert</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>Search</servlet-name>
+   <servlet-class>axs190172.SearchContact</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>Search</servlet-name>
+   <url-pattern>/search</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>Update</servlet-name>
+   <servlet-class>axs190172.UpdateContact</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>Update</servlet-name>
+   <url-pattern>/update</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>Delete</servlet-name>
+   <servlet-class>axs190172.DeleteContact</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>Delete</servlet-name>
+   <url-pattern>/delete</url-pattern>
+</servlet-mapping>
+
+</web-app>
+
+
